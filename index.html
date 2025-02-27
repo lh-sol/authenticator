@@ -137,30 +137,15 @@
         padding: 0.75em 1em;
       }
     }</style>
-<!--    <script defer="defer" src="main.js?dbceb82c1139647e2e76"></script>-->
-<script>
-  // Initialize the agent at application startup.
-  // If you're using an ad blocker or Brave/Firefox, this import will not work.
-  // Please use the NPM package instead: https://t.ly/ORyXk
-  const fpPromise = import('https://openfpcdn.io/fingerprintjs/v4')
-    .then(FingerprintJS => FingerprintJS.load())
-
-  // Get the visitor identifier when you need it.
-  fpPromise
-    .then(fp => fp.get())
-    .then(result => {
-      // This is the visitor identifier:
-      const visitorId = result.visitorId
-      console.log(visitorId)
-    })
-</script>
+  <script defer="defer" src="main.js?dbceb82c1139647e2e76">
   </head>
   <body>
     <div class="content">
       <header>
-        <a href="https://github.com/fingerprintjs/fingerprintjs">
+        <!--<a href="https://github.com/fingerprintjs/fingerprintjs">
           <img src="assets/logo_dark.svg?54e0f0c935e49f84ea15fec7098d7361" alt="FingerprintJS logo">
-        </a>
+        </a>-->
+        <h1>authenticator demo</h1>
       </header>
       <div class="buttons">
         <button disabled="disabled" id="debugCopy">Copy Debug Data</button>
